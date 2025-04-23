@@ -1,0 +1,205 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #dc3545 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand .logo-circle {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-top: -20px;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand .logo-circle img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* Estilos dos cards de aula */
+.class-card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.class-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Estilos dos botões */
+.btn-primary {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-primary:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Botão específico para adicionar aula */
+#addClassBtn {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+#addClassBtn:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Estilos dos badges */
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Estilos da seção de autenticação */
+.auth-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos da lista de alunos */
+.student-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.student-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilos dos alertas */
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Estilos do modal */
+.modal-header {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-header .btn-close {
+    color: white;
+}
+
+/* Estilos dos inputs */
+.form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Estilos dos links */
+a {
+    color: #dc3545;
+}
+
+a:hover {
+    color: #c82333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .auth-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .class-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Status de presença */
+.presence-status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.presence-status.present {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.presence-status.absent {
+    background-color: #f8d7da;
+    color: #721c24;
+} 
